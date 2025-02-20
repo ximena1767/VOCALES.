@@ -1,7 +1,7 @@
 function starClasification ()
 {
     navigator.mediaDevices.getUserMedia({audio: true});
-    classifier = ml5.soundClassifier("https://storage.googleapis.com/tm-model/TRLNFa6Mt/model.json", modelReady);
+    classifier = ml5.soundClassifier("https://storage.googleapis.com/tm-model/IuvUPvPys/model.jsonn", modelReady);
 }
 
 function modelReady(){
@@ -29,31 +29,31 @@ function gotResults(error, results){
         img4 = document.getElementById('letterU')
     
     
-        if (results[0].label == "gritos A") {
+        if (results[0].label == "vocal a") {
           img.src = 'DancingA.gif';
           img1.src = 'E.png';
           img2.src = 'I.png';
           img3.src = 'O.png';
           img4.src = 'U.png';
-        } else if (results[0].label == "gritos E") {
+        } else if (results[0].label == "Vocal e") {
           img.src = 'A.png';
           img1.src = 'DancingE.gif';
           img2.src = 'I.png';
           img3.src = 'O.png';
           img4.src = 'U.png';
-        } else if (results[0].label == "gritos I") {
+        } else if (results[0].label == "Vocal i") {
           img.src = 'A.png';
           img1.src = 'E.png';
           img2.src = 'DancingI.gif';
           img3.src = 'O.png';
           img4.src = 'U.png';
-        }else if (results[0].label == "gritos O"){
+        }else if (results[0].label == "Vocal o"){
           img.src = 'A.png';
           img1.src = 'E.png';
           img2.src = 'I.png';
           img3.src = 'DancingO.gif';
           img4.src = 'U.png';
-        }else if (results[0].label == "gritos U"){
+        }else if (results[0].label == "Vocal u"){
             img.src = 'A.png';
             img1.src = 'E.png';
             img2.src = 'I.png';
